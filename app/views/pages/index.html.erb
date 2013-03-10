@@ -1,0 +1,31 @@
+<div class="span6">
+  <div id="myCarousel" class="carousel slide" data-interval="4000">
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+      </ol>
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+          <div class="active item"><%= image_tag "shopoutsidefront.jpg" %></div>
+          <div class="item"><%= image_tag "storekevinpartswall.jpg" %></div>
+          <div class="item"><%= image_tag "storewestaisle.jpg" %></div>
+          <div class="item"><%= image_tag "storeeastaisle.jpg" %></div>
+          <div class="item"><%= image_tag "storetirewall.jpg" %></div>
+          <div class="item"><%= image_tag "storeupstairstrack.jpg" %></div>
+          <div class="item"><%= image_tag "trainservice.jpg" %></div>
+      </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      <script type="text/javascript">
+          $('.carousel') {
+              interval: 2000
+          });
+      </script>
+ </div>
+</div>

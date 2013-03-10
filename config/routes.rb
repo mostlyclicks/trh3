@@ -1,4 +1,25 @@
 Trh3::Application.routes.draw do
+  get "pages/index"
+
+  get "pages/airplanes_helis"
+
+  get "pages/cars"
+
+  get "pages/trains"
+
+  get "pages/racing"
+
+  get "pages/clubs"
+
+  get "pages/location"
+
+  match '/airplanes_helis' => 'pages#airplanes_helis'
+  match '/cars' => 'pages#cars'
+  match '/trains' => 'pages#trains'
+  match '/racing' => 'pages#racing'
+  match '/clubs' => 'pages#clubs'
+  match '/location' => 'pages#location'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +69,7 @@ Trh3::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'pages#index'
 
   # See how all your routes lay out with "rake routes"
 

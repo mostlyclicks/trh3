@@ -2,13 +2,92 @@
 <html>
 <head>
   <title>Trh3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <style>
+        .red {border:1px solid red;}
+        .orange {background-color: #ff9600;}
+        .logo-header {margin-top:20px;margin-bottom:20px;}
+
+        .navbar-inner {border-color:none;}
+
+        </style>
+        
+        <!-- link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" -->
+        <!-- link href="tr.css" rel="stylesheet" media="screen" -->
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+	<div class="row-fluid orange">
+  <div class="container logo-header">
+  	<div class="row">
+
+  		
+  		<%= image_tag 'thunderroadlogo2.jpg' %>
+  		<div class="span6 pull-right" style="text-align:right;">
+  			<h3>309-762-5295</h3>
+  			<h5><a href="mailto:info@thunderroadhobbies.com">info@thunderroadhobbies.com</a></h5>	
+  		</div>
+
+  	</div>
+  </div>
+	</div>
+
+	<div class="row-fluid black">
+		<div class="container">
+			<div class="navbar navbar-inverse" style="text-align:center;">
+				<div class="navbar-inner " >
+				<ul class="nav" >
+					<li><a href="/">Home</a></li>
+					<li><a href="/airplanes_helis">Airplanes/Helis</a></li>
+					<li><a href="/cars">Cars</a></li>
+					<li><a href="/trains">Trains</a></li>
+					<li><a href="/racing">Racing</a></li>
+					<li><a href="http://s3.excoboard.com/Thunder_Road_Hobbies" target="_blank">Forums</a></li>
+					<li><a href="/clubs">Clubs</a></li>
+					<li><a href="/location">Location</a></li>
+				</ul>
+				</div>
+			</div>
+		</div>
+  </div>
+
+  <div class="container">
+	<div class="row-fluid">
+	<!-- Main Container -->
+	<div class="row-fluid">
+	<div class="span3">
+	<h3>Hours</h3>
+	<ul class="unstyled">
+	<li>Monday: 12 - 7</li>
+	<li>Tuesday: 12 - 7</li>
+	<li>Wednesday: closed</li>
+	<li>Thursday: 12 - 7</li>
+	<li>Friday: 12 - 7</li>
+	<li>Saturday: 10 - 6</li>
+	<li>Sunday: 12 - 4</li>
+	</ul>
+	</div>
+
 <%= yield %>
+
+
+                    
+                    <div class="span3">
+                        <a href="http://www.facebook.com/thunder.hobbies">
+                            <%= image_tag "facebookimage.jpg"  %>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- put script code as low as possible -->
+<script src="jquery-1.9.1.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>
