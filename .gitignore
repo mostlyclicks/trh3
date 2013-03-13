@@ -6,16 +6,16 @@
 
 # Ignore bundler config
 .bundle
-  config/database.yml
-  config/s3.yml
-  db/*.db
-  db/*.sql
-  db/*.sqlite3*
-  log/*.log
-  *.log
-  /tmp/
-  doc/
-  *.swp
-  *~
-  .project
-  .DS_Store
+ config/database.yml
+ config/s3.yml
+ db/*.db
+ db/*.sql
+ db/*.sqlite3*
+ log/*.log
+ *.log
+ /tmp/
+ doc/
+ *.swp
+ *~
+ .project
+ .DS_Store
